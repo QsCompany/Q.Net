@@ -1,0 +1,23 @@
+{
+  "name": "q.net",
+  "version": "1.0.0",
+  "description": "a collection of utils to create a optimized server work perfectly with Q-Infinite Framework",
+  "main": "Common.csproj",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QsCompany/Q.Net.git"
+  },
+  "keywords": [
+    "server;Q-Infinite;api;c#;.net;Q;dz;dz",
+    "developpers"
+  ],
+  "author": "Achour Brahim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QsCompany/Q.Net/issues"
+  },
+  "homepage": "https://github.com/QsCompany/Q.Net#readme"
+}

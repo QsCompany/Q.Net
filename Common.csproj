@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{09EBA87B-08ED-49B2-9047-1F6033FD207A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Common</RootNamespace>
+    <AssemblyName>Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.3</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>none</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>7.3</LangVersion>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <FileAlignment>1024</FileAlignment>
+    <BaseAddress>1048576</BaseAddress>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>true</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetZip, Version=1.11.0.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\DotNetZip.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Api\Downloader.cs" />
+    <Compile Include="Api\Message.cs" />
+    <Compile Include="Attributes\Attributes.cs" />
+    <Compile Include="Binding\DObject.cs" />
+    <Compile Include="Crypto\AES.cs" />
+    <Compile Include="Crypto\UTF8.cs" />
+    <Compile Include="Data\DataBaseStructure.cs" />
+    <Compile Include="Data\DatabaseUpdator.cs" />
+    <Compile Include="Data\DataRow.cs" />
+    <Compile Include="Data\DataTable.cs" />
+    <Compile Include="Data\DBManager.cs" />
+    <Compile Include="Data\Path.cs" />
+    <Compile Include="Data\Shemas\SQLColumn.cs" />
+    <Compile Include="Data\Shemas\SQLDatabase.cs" />
+    <Compile Include="Data\Shemas\SQLSchema.cs" />
+    <Compile Include="Data\Shemas\SQLTable.cs" />
+    <Compile Include="Data\Shemas\SQLUnit.cs" />
+    <Compile Include="Models\CommandsParam.cs" />
+    <Compile Include="Models\GuidService.cs" />
+    <Compile Include="Models\Message.cs" />
+    <Compile Include="Models\Message1.cs" />
+    <Compile Include="Models\Negociation.cs" />
+    <Compile Include="Models\SessionIdService.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Package\AppInfo.cs" />
+    <Compile Include="Package\Apps.cs" />
+    <Compile Include="Package\Desktop.cs" />
+    <Compile Include="Package\PackageInstaller.cs" />
+    <Compile Include="Package\Resource.cs" />
+    <Compile Include="Parsers\Class1.cs" />
+    <Compile Include="Parsers\Context.cs" />
+    <Compile Include="Parsers\DObjectParameter.cs" />
+    <Compile Include="Parsers\Indexer.cs" />
+    <Compile Include="Parsers\Json.cs" />
+    <Compile Include="Parsers\Typeserializer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serializers\DataRowTypeSerializer.cs" />
+    <Compile Include="Serializers\GuidSerializer.cs" />
+    <Compile Include="Serializers\MessageSerializer.cs" />
+    <Compile Include="Services\ApisHandler.cs" />
+    <Compile Include="Services\RequestArgs.cs" />
+    <Compile Include="Services\Server.cs" />
+    <Compile Include="Services\Service.cs" />
+    <Compile Include="Utils\CodeError.cs" />
+    <Compile Include="Utils\CommandsQuee.cs" />
+    <Compile Include="Crypto\Crypto.cs" />
+    <Compile Include="Utils\Envirenement.cs" />
+    <Compile Include="Utils\ErrorHandlerReporter.cs" />
+    <Compile Include="Utils\FastArray.cs" />
+    <Compile Include="Utils\Help.cs" />
+    <Compile Include="Utils\Ionsole.cs" />
+    <Compile Include="Utils\TaskQueue.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Common.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

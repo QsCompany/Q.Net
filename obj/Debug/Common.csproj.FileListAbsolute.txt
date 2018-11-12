@@ -1,0 +1,16 @@
+F:\Test\SharedLibs\obj\Debug\Common.csprojAssemblyReference.cache
+F:\Test\SharedLibs\obj\Debug\Common.csproj.CoreCompileInputs.cache
+F:\Test\SharedLibs\bin\Debug\Common.dll
+F:\Test\SharedLibs\bin\Debug\Common.pdb
+F:\Test\SharedLibs\bin\Debug\DotNetZip.dll
+F:\Test\SharedLibs\obj\Debug\Common.csproj.CopyComplete
+F:\Test\SharedLibs\obj\Debug\Common.dll
+F:\Test\SharedLibs\obj\Debug\Common.pdb
+F:\Q Framework\C#\Common\bin\Debug\Common.dll
+F:\Q Framework\C#\Common\bin\Debug\Common.pdb
+F:\Q Framework\C#\Common\bin\Debug\DotNetZip.dll
+F:\Q Framework\C#\Common\obj\Debug\Common.csprojAssemblyReference.cache
+F:\Q Framework\C#\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+F:\Q Framework\C#\Common\obj\Debug\Common.csproj.CopyComplete
+F:\Q Framework\C#\Common\obj\Debug\Common.dll
+F:\Q Framework\C#\Common\obj\Debug\Common.pdb

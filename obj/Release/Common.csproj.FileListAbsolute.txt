@@ -1,0 +1,5 @@
+F:\Test\SharedLibs\bin\Release\Common.dll
+F:\Test\SharedLibs\bin\Release\DotNetZip.dll
+F:\Test\SharedLibs\obj\Release\Common.csproj.CoreCompileInputs.cache
+F:\Test\SharedLibs\obj\Release\Common.csproj.CopyComplete
+F:\Test\SharedLibs\obj\Release\Common.dll
